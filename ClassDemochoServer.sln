@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.10
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassDemochoServer", "ClassDemochoServer\ClassDemochoServer.csproj", "{9956A853-5945-4798-8421-33D622327277}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EchoClient", "EchoClient\EchoClient.csproj", "{7E129648-5F27-435C-89E5-643E1BFA458D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9956A853-5945-4798-8421-33D622327277}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9956A853-5945-4798-8421-33D622327277}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9956A853-5945-4798-8421-33D622327277}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9956A853-5945-4798-8421-33D622327277}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E129648-5F27-435C-89E5-643E1BFA458D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E129648-5F27-435C-89E5-643E1BFA458D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E129648-5F27-435C-89E5-643E1BFA458D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E129648-5F27-435C-89E5-643E1BFA458D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45BAF436-E77A-4D6D-8134-D83DFC23182B}
+	EndGlobalSection
+EndGlobal
