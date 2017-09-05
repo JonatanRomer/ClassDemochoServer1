@@ -23,16 +23,27 @@ namespace ClassDemochoServer
             server.Start();
 
             using (TcpClient client = server.AcceptTcpClient())
-            using (NetworkStream ns = client.GetStream())
+            DoClient(client);
+        }
+
+        private static void DoClient(TcpClient client)
+        {
+            using (Stream ns = client.GetStream())
             using (StreamReader sr = new StreamReader(ns))
             using (StreamWriter sw = new StreamWriter(ns))
             {
-                String inlinje = sr.ReadLine();
-                Console.WriteLine("server modtaget : " + inlinje);
-                sw.WriteLine(inlinje);
+                String inline = sr.ReadLine();
+                String outLine = HandleClient(inline);
+
+                sw.WriteLine(outLine);
                 sw.Flush();
             }
         }
 
+        public static String HandleClient(String line)
+        {
+            Console.WriteLine("server modtaget : " + line);
+            return line;
+        }
     }
 }
